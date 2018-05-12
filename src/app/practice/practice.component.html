@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="text-center">This is for practice only!!!</h1>
+  </div>
+  <hr>
+
+  <div id="status" [style.display]="showStatus">
+    <h3>Status: <span class="text-warning">{{ currentStatus }}</span></h3>
+  </div>
+  <br>
+  <div class="statusActions">
+    <button class="btn-link" (click)="getStatus()">Check Status</button>
+    <button class="btn-link" (click)="toggleInputBtn()">Set Status</button>
+    <br>
+  </div>
+  <div class="input-group addStatus" *ngIf="toggleInput">
+    <label for="_status">Add new status:</label>
+    <input class="form-control" id="_status" type="text" placeholder="update status..." [(ngModel)]="currentStatus">
+    <input class="form-control" type="text" placeholder="update status...">
+    <button class="btn btn-default btn-block" (click)="setStatus($event)">Save</button>
+  </div>
+</div>
+
+
