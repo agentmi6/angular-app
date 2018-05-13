@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="changeState()">Display Details</button>
+<p *ngIf="paragraphDisplayState">This paragraph should toggle display on button click!</p>
+<br>
+<li *ngFor="let c of clicksArray; let i = index"
+    style="list-style: none"
+    [ngStyle]="{backgroundColor: i >= 4 ? 'blue':''}"
+    [ngClass]="{whiteText: i >= 4}"
+   >{{ c }}
+</li>
+

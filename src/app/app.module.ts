@@ -9,6 +9,7 @@ import {FooterComponent} from './footer/footer.component';
 import { ServersComponent } from './servers/servers.component';
 import {PracticeComponent} from './practice/practice.component';
 import { RouterModule, Routes } from '@angular/router';
+import {TaskComponent} from './task/task.component';
 
 
 
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     ServersComponent,
-    PracticeComponent
+    PracticeComponent,
+    TaskComponent
   ],
   imports: [
     RouterModule.forRoot(
